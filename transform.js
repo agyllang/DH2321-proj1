@@ -1,3 +1,9 @@
+// TODO
+// add border to people who have taken an IV course before
+// add legend
+// add widget for choosing the cutoff
+// host visualization online
+
 // skill value cutoff
 const cutoff = 5
 
@@ -52,7 +58,7 @@ people.forEach((person) => {
   });
 });
 
-// bubble hierarchy 
+// bubble hierarchy
 const basicChart = {
   name: "main",
   children: [
