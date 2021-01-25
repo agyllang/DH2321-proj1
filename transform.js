@@ -1,5 +1,7 @@
+// skill value cutoff
 const cutoff = 5
 
+// person skills to category
 const translation = {
   infoVisSkills: "Information Visualization",
   statisticSkills: "Statistics",
@@ -27,6 +29,7 @@ const filterBySkill = (person, cutoff) =>
     ([k, v]) => k.includes("Skills") && v >= cutoff
   );
 
+// list of all categories
 const categories = Object.values(translation).reduce(
   (acc, name) => ({
     ...acc,
@@ -38,6 +41,7 @@ const categories = Object.values(translation).reduce(
   {}
 );
 
+// place each person into relevant categories
 people.forEach((person) => {
   const relSkills = filterBySkill(person, cutoff);
   relSkills.forEach(([skill, val]) => {
@@ -48,6 +52,7 @@ people.forEach((person) => {
   });
 });
 
+// bubble hierarchy 
 const basicChart = {
   name: "main",
   children: [
