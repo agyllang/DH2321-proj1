@@ -6,7 +6,8 @@ const chartHolder = document.getElementById("chart-holder");
 const width = 932;
 const height = width;
 
-const pack = () =>
+
+const pack = (data) =>
   d3.pack().size([width, height]).padding(3)(
     d3
       .hierarchy(data)
@@ -15,10 +16,12 @@ const pack = () =>
   );
 
 const chart = () => {
+  const data = loadData();
   const root = pack(data);
   let focus = root;
   let view;
 
+  d3.selectAll("svg > *").remove();
   const svg = d3
     .select("#chart")
     .attr("viewBox", `-${width / 2} -${height / 2} ${width} ${height}`)
@@ -34,9 +37,11 @@ const chart = () => {
     .data(root.descendants().slice(1))
     .join("circle")
     .attr("fill", (d) => d.data.color)
+    .attr("stroke", colors.border)
+    .attr("stroke-width", d => !d.children && d.data.data &&  d.data.data.relevantCoursesBoolean ? "1" : "0")
     .attr("pointer-events", (d) => (!d.children ? "none" : null))
     .on("mouseover", function () {
-      d3.select(this).attr("stroke", "#000");
+      d3.select(this).attr("stroke", "#000").attr("stroke-width", "1");
     })
     .on("mouseout", function () {
       d3.select(this).attr("stroke", null);
@@ -105,7 +110,21 @@ const chart = () => {
       });
   }
 
+  // evil hack for zoom bug
+  d3.select('#chart').dispatch('click');
+
   return svg.node();
 };
 
 chart();
+const cutoffInput = document.getElementById("cutoff-input");
+const cutoffValue = document.getElementById("cutoff-value");
+cutoffInput.addEventListener("change", (e) => {
+  cutoff = e.target.value;
+  cutoffValue.innerText = e.target.value;
+  chart();
+ })
+
+cutoffInput.value = cutoff;
+
+

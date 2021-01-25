@@ -28,6 +28,7 @@ const people = [
     relevantCourses: "At kth, DD1354, DH2320 and DH2413 if I pass it",
     masterThesis: "Have not started planning for it.",
     inFiveYears: "No clue",
+    relevantCoursesBoolean: true
   },
   {
     ID: 2,
@@ -60,6 +61,7 @@ const people = [
     masterThesis: "Have not started planning for it.",
     inFiveYears:
       "entrepreneur. To create new interaction applications/frameworks.",
+    relevantCoursesBoolean: true
   },
   {
     ID: 3,
@@ -90,6 +92,7 @@ const people = [
     relevantCourses: "Media Production、Webpage Design",
     masterThesis: "Have not started planning for it.",
     inFiveYears: "Product Manager in Internet Company or CPG business",
+    relevantCoursesBoolean: true
   },
   {
     ID: 4,
@@ -123,6 +126,7 @@ const people = [
     masterThesis: "Have started planning, but haven't made contacts yet.",
     inFiveYears:
       'my most honest answer is "in the woods, boiling tea water over a fire in a cast iron kettle." but other than that, i am torn. i\'m thinking about trying for a phd, but would also like to work in the design industry',
+    relevantCoursesBoolean: true
   },
   {
     ID: 5,
@@ -155,6 +159,7 @@ const people = [
     masterThesis: "Have not started planning for it.",
     inFiveYears:
       "I want to be a front-end developer for music streaming industry.",
+    relevantCoursesBoolean: true
   },
   {
     ID: 6,
@@ -186,6 +191,7 @@ const people = [
     masterThesis: "Have not started planning for it.",
     inFiveYears:
       "Industry. Working in designing and implementing complex data visualizations",
+    relevantCoursesBoolean: true
   },
   {
     ID: 7,
@@ -219,6 +225,7 @@ const people = [
     masterThesis: "Have started planning, but haven't made contacts yet.",
     inFiveYears:
       "Entrepeneur, industry or consultant - working with front end/full stack, for sustainability issues",
+    relevantCoursesBoolean: true
   },
   {
     ID: 8,
@@ -249,6 +256,7 @@ const people = [
       "Multimedia, databases,  and data mining & data science in 2017",
     masterThesis: "Have not started planning for it.",
     inFiveYears: "Working in-house at some nice company ",
+    relevantCoursesBoolean: true
   },
   {
     ID: 9,
@@ -279,6 +287,7 @@ const people = [
     relevantCourses: "none",
     masterThesis: "Have started working, but not completed.",
     inFiveYears: "In tech industry as product manager",
+    relevantCoursesBoolean: false
   },
   {
     ID: 10,
@@ -311,6 +320,7 @@ const people = [
     masterThesis: "Have not started planning for it.",
     inFiveYears:
       "I see myself as an entrepreneur who recently started my own company, most likely within technology.",
+    relevantCoursesBoolean: true
   },
   {
     ID: 11,
@@ -344,6 +354,7 @@ const people = [
     masterThesis: "Have started planning, but haven't made contacts yet.",
     inFiveYears:
       "I could see myself as an entrepreneur in five years. For me it's first and foremost important I work with something I find important and valuable for the rest of the world. I'm planning to start off working for a company, and then perhaps moving on to working with *data* (whatever that means) somehow on my own.  ",
+    relevantCoursesBoolean: true
   },
   {
     ID: 12,
@@ -378,6 +389,7 @@ const people = [
     masterThesis: "Have not started planning for it.",
     inFiveYears:
       "I'm aiming for becoming a data scientist and i will probably work in industry. I'm unsure at what kind of company i want to work for tho since i find most things interesting so i have a hard time choosing.",
+    relevantCoursesBoolean: true
   },
   {
     ID: 13,
@@ -409,6 +421,7 @@ const people = [
     relevantCourses: "DT2140?",
     masterThesis: "Have started planning, but haven't made contacts yet.",
     inFiveYears: "Game developer or something to do with game industry",
+    relevantCoursesBoolean: true
   },
   {
     ID: 14,
@@ -440,6 +453,7 @@ const people = [
     masterThesis: "Have not started planning for it.",
     inFiveYears:
       "I want to be expert in whatever field I find interesting, does not really matter what type of job, but at the moment I feel more towards industry than academia",
+    relevantCoursesBoolean: true
   },
   {
     ID: 15,
@@ -473,6 +487,7 @@ const people = [
     masterThesis: "Have started planning, but haven't made contacts yet.",
     inFiveYears:
       "I would like to be in the video games industry, at an anti-crunch-culture company. I don't know if it is achievable in five years, but I can imagine myself having some kind of leading role, like on the level of scrum master. My plan is to do my thesis at a video game company, and using that avenue for getting hired.",
+    relevantCoursesBoolean: true
   },
   {
     ID: 16,
@@ -502,6 +517,7 @@ const people = [
     relevantCourses: "applied linear regression using R, 2018",
     masterThesis: "Have not started planning for it.",
     inFiveYears: "consultant",
+    relevantCoursesBoolean: true
   },
   {
     ID: 17,
@@ -535,6 +551,7 @@ const people = [
     masterThesis: "Have not started planning for it.",
     inFiveYears:
       "I am not really sure but I would like to work in the industry or as a consultant, maybe  within the computer game industry.",
+    relevantCoursesBoolean: false
   },
   {
     ID: 18,
@@ -567,6 +584,7 @@ const people = [
       "Several programming courses from 2017-2020, DD2258 in 2020.",
     masterThesis: "Have not started planning for it.",
     inFiveYears: "I have no idea.",
+    relevantCoursesBoolean: true
   },
   {
     ID: 19,
@@ -601,6 +619,7 @@ const people = [
     masterThesis: "Have not started planning for it.",
     inFiveYears:
       "I am quite certain I will be somewhere in the industry as a programmer. I don't think I want to start my own company or join some small litlle startup. I don't think I either want to be a consultant. But it is hard to be more specific than that. \n\nCan't say I have ruled out working with computer games, but I am not sure if that is what I want to do. In fact I am quite open minded, I think I will be satisfied as long as I get to do programming.\n",
+    relevantCoursesBoolean: true
   },
   {
     ID: 20,
@@ -634,6 +653,7 @@ const people = [
     masterThesis: "Have not started planning for it.",
     inFiveYears:
       "Working for a company that allows me to be somewhat creative. Maybe in the cultural sector.",
+    relevantCoursesBoolean: true
   },
   {
     ID: 21,
@@ -666,6 +686,7 @@ const people = [
     masterThesis: "Have not started planning for it.",
     inFiveYears:
       "IT-industry working with software/visualisation/machine learning",
+    relevantCoursesBoolean: true
   },
   {
     ID: 22,
@@ -697,6 +718,7 @@ const people = [
     masterThesis: "",
     inFiveYears:
       "Industry, as a developer. Preferably working with rendering in some way.",
+    relevantCoursesBoolean: true
   },
   {
     ID: 23,
@@ -728,6 +750,7 @@ const people = [
       "Media Technology and Interaction Design, Introduction to Visualization, Computer Graphics and Image/Video Processing and Human Perception for Information Technology. All courses taken at KTH last academic year.",
     masterThesis: "Have not started planning for it.",
     inFiveYears: "UNKNOWN",
+    relevantCoursesBoolean: true
   },
   {
     ID: 24,
@@ -761,6 +784,7 @@ const people = [
     masterThesis: "Have not started planning for it.",
     inFiveYears:
       "I just want a job that allows me to afford a house, garage, two cars and one or two motorcycles. I guess Industry or consultant. Entrepreneur and independent contractors seem like they require too much effort.",
+    relevantCoursesBoolean: false
   },
   {
     ID: 25,
@@ -792,6 +816,7 @@ const people = [
       "I have not completed any, but I’m currently taking DH2320 Introduction to visualization and computer graphics.",
     masterThesis: "Have started planning, but haven't made contacts yet.",
     inFiveYears: "I’d like to pursue my PhD degree at KTH.",
+    relevantCoursesBoolean: false
   },
   {
     ID: 26,
@@ -824,6 +849,7 @@ const people = [
     masterThesis: "",
     inFiveYears:
       "I want to code things and have a stable income, those are my goals atm",
+    relevantCoursesBoolean: true
   },
   {
     ID: 27,
@@ -856,6 +882,7 @@ const people = [
     masterThesis: "Have not started planning for it.",
     inFiveYears:
       "My plans haven't come so far yet unfortunately, but perhaps working in the industry somewhere.",
+    relevantCoursesBoolean: true
   },
   {
     ID: 28,
@@ -888,6 +915,7 @@ const people = [
     masterThesis: "I thought about potential topics",
     inFiveYears:
       "Industry, working maybe as a Frontend Developer or UX Designer",
+    relevantCoursesBoolean: true
   },
   {
     ID: 29,
@@ -921,6 +949,7 @@ const people = [
     masterThesis: "Have not started planning for it.",
     inFiveYears:
       "Industry. I want to simply be employed, and have financial stability doing something that won't physically or mentally break me at any point.",
+    relevantCoursesBoolean: false
   },
   {
     ID: 30,
@@ -950,6 +979,7 @@ const people = [
     relevantCourses: "none",
     masterThesis: "Have not started planning for it.",
     inFiveYears: "algorithm engineer",
+    relevantCoursesBoolean: false
   },
   {
     ID: 31,
@@ -981,6 +1011,7 @@ const people = [
       "I have completed over 200 MOOCs and at least some of the Datascience oriented ones in R- and Python-programming have had relevant material in regards to graphics and interactive material. You can say that those MOOCs are the reason I applied to this course.",
     masterThesis: "Have started working, but not completed.",
     inFiveYears: "Self employed most likely",
+    relevantCoursesBoolean: true
   },
   {
     ID: 32,
@@ -1012,6 +1043,7 @@ const people = [
       "Computer graphics.  Fudan University 2020\nIntroduction to Visualization, Computer Graphics and Image/Video Processing KTH, now",
     masterThesis: "Have not started planning for it.",
     inFiveYears: "Industry. I expect to become a qualified technical engineer.",
+    relevantCoursesBoolean: true
   },
   {
     ID: 33,
@@ -1043,6 +1075,7 @@ const people = [
       "The introduction to graphics course, and the basic statistics math course, beside all the programming courses",
     masterThesis: "Have not started planning for it.",
     inFiveYears: "Entrepreneur if everything went 5/5",
+    relevantCoursesBoolean: true
   },
   {
     ID: 34,
@@ -1074,6 +1107,7 @@ const people = [
       "All of the courses are within the media technology program, kth: Calculus one variables (2018) and several variables (2019), probability therory & statistics (2020) human computer interaction (2019), interaction programming and the dynamic web (2020), mobile development with web technologies (2020), interaction design (2020), human perception (2020), multimodal interaction (2021) ",
     masterThesis: "Have not started planning for it.",
     inFiveYears: "UNKNOWN",
+    relevantCoursesBoolean: true
   },
   {
     ID: 35,
@@ -1105,6 +1139,7 @@ const people = [
     masterThesis: "Have started planning, but haven't made contacts yet.",
     inFiveYears:
       "I imagine myself working in an elevated position in a startup that uses next-gen technologies. This could be AR/XR, game dev, and web dev.",
+    relevantCoursesBoolean: true
   },
   {
     ID: 36,
@@ -1134,6 +1169,7 @@ const people = [
     relevantCourses: "HCI, Interactive Media technology",
     masterThesis: "Have not started planning for it.",
     inFiveYears: "Researcher",
+    relevantCoursesBoolean: true
   },
   {
     ID: 37,
@@ -1163,6 +1199,7 @@ const people = [
     relevantCourses: "Intro to Statistics, Econometrics",
     masterThesis: "Have not started planning for it.",
     inFiveYears: "UNKNOWN",
+    relevantCoursesBoolean: true
   },
   {
     ID: 38,
@@ -1192,6 +1229,7 @@ const people = [
     relevantCourses: "No",
     masterThesis: "Have not started planning for it.",
     inFiveYears: "Product designer or product manager",
+    relevantCoursesBoolean: false
   },
   {
     ID: 39,
@@ -1223,6 +1261,7 @@ const people = [
     masterThesis: "Have not started planning for it.",
     inFiveYears:
       "I would like to possibly have begin a PhD, or work with project management or interaction design",
+    relevantCoursesBoolean: true
   },
   {
     ID: 40,
@@ -1254,6 +1293,7 @@ const people = [
     masterThesis:
       "Have a supervisor and topic, but haven't started working yet.",
     inFiveYears: "Academia",
+    relevantCoursesBoolean: true
   },
   {
     ID: 41,
@@ -1285,6 +1325,7 @@ const people = [
       "DM2350 Mänsklig perception för informationsteknik, DM2601 Medieteknik och interaktionsdesign, DD1334 Databasteknik, DH2642 Interaktionsprogrammering och dynamiska webben, SF1919 Sannolikhetsteori och statistik, SF1626 Flervariabelanalys etc. Courses from Media Technology Bachelor (interactive track) and Visual Media Interactive Media Master ",
     masterThesis: "Have not started planning for it.",
     inFiveYears: "Fullstack or frontend developer, UX/UI, maybe consultant",
+    relevantCoursesBoolean: true
   },
   {
     ID: 42,
@@ -1315,6 +1356,7 @@ const people = [
     relevantCourses: "None",
     masterThesis: "UNKNOWN",
     inFiveYears: "UNKNOWN",
+    relevantCoursesBoolean: false
   },
   {
     ID: 43,
@@ -1345,5 +1387,6 @@ const people = [
     relevantCourses: "no",
     masterThesis: "Have not started planning for it.",
     inFiveYears: "UNKNOWN",
+    relevantCoursesBoolean: false
   },
 ];

@@ -24,7 +24,8 @@ const colors = {
     other: "#f7b538",
     "Computer Science": "#247ba0",
     "Media Technology": "#f25f5c"
-  }
+  },
+  border: "black"
 };
 
 const fonts = {
