@@ -2,7 +2,11 @@
 // add border to people who have taken an IV course before
 // add legend
 // add widget for choosing the cutoff
-// host visualization online
+// host visualization online - Github pages
+// add the number of the skill on the bubble
+// change the border colour (bubbles)
+// check close-up bug
+// update theme
 
 // skill value cutoff
 const cutoff = 5
