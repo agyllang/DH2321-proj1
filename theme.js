@@ -15,7 +15,7 @@ const colors = {
   "Visual Skills": "rgba(130, 70, 112, 0.3)",
   "Information Visualization": "rgba(130, 70, 112, 0.4)",
   "Art and Drawing": "rgba(130, 70, 112, 0.4)",
-  "UX Evaluation": "rgba(70, 117, 153, 0.6)",
+  "UX Evaluation Skills": "rgba(70, 117, 153, 0.6)",
   "Teamwork Skills": "rgba(215, 122, 97, 0.3)",
   Communication: "rgba(215, 122, 97, 0.4)",
   Collaboration: "rgba(215, 122, 97, 0.4)",
@@ -31,7 +31,7 @@ const colors = {
 const fonts = {
   label: {
     size: "30px",
-    weight: "400"
+    weight: "700"
   },
   name: {
     size: "20px",

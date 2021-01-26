@@ -1,10 +1,9 @@
 // TODO
-// change the border colour (bubbles) -a
-// fix the value that appears on the label -s
-// host visualization online - Github pages -a
-// add the number of the skill on the bubble -a
-// change the border colour (bubbles) -a
-
+// take nice screenshots for the document
+// label disappears at high levels (vis)
+// maybe change positioning?
+// fix skill numbers (too shitty-looking)
+// change label (unreadable)
 
 // skill value cutoff
 let cutoff = 5;
@@ -19,7 +18,7 @@ const translation = {
   programmingSkills: "General Programming",
   compGraphProgSkills: "CG Programming",
   HCIprogSkills: "HCI Programming",
-  UXEvalSkills: "UX Evaluation",
+  UXEvalSkills: "UX Evaluation Skills",
   communicationSkills: "Communication",
   collaborationSkills: "Collaboration",
   codeRepoSkills: "Version Control",

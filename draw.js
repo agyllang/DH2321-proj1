@@ -40,12 +40,12 @@ const chart = () => {
     .attr("stroke", colors.border)
     .attr("stroke-width", d => !d.children && d.data.data &&  d.data.data.relevantCoursesBoolean ? "1" : "0")
     .attr("pointer-events", (d) => (!d.children ? "none" : null))
-    .on("mouseover", function () {
-      d3.select(this).attr("stroke", "#000").attr("stroke-width", "2");
-    })
-    .on("mouseout", function () {
-      d3.select(this).attr("stroke", null);
-    })
+    // .on("mouseover", function () {
+    //   d3.select(this).attr("stroke", "#000").attr("stroke-width", "2");
+    // })
+    // .on("mouseout", function () {
+    //   d3.select(this).attr("stroke", null);
+    // })
     .on(
       "click",
       (event, d) => focus !== d && (zoom(event, d), event.stopPropagation())
@@ -80,7 +80,7 @@ const chart = () => {
     .style("display", (d) => (d.parent === root ? "inline" : "none"))
     .text((d) => d.data.skill);
 
- 
+
   zoomTo([root.x, root.y, root.r]);
 
   function zoomTo(v) {
@@ -95,7 +95,7 @@ const chart = () => {
 
     skillLabel.attr(
       "transform",
-      (d) => `translate(${(d.x - v[0]) * k},${(d.y - v[1] + 5) * k})`
+      (d) => `translate(${(d.x - v[0]) * k},${(d.y - v[1] + 7) * k})`
     );
 
     node.attr(
