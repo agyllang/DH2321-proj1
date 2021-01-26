@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: "Helvetica Neue", Arial;
+}
+
+.legend {
+    position: absolute;
+    bottom: 10px;
+    right: 25px;
+    width: 15%;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* LEGEND ONE */
+
+.legend__one {
+    display: flex;
+    margin-bottom: 30px;
+    align-content: flex-end;
+}
+
+.legend__one-item {
+    margin-right: 10px;
+}
+
+.item1-text {
+    height: 40px;
+}
+
+.item2-text {
+    height: 40px;
+}
+
+.item3-text {
+    height: 40px;
+}
+
+.item-color {
+    margin-top: 10px;
+    height: 25px;
+
+}
+
+/* LEGEND TWO */
+
+.legend__two {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.item4-text {
+    height: 60px;
+}
+
+.item5-text {
+    height: 60px;
+}

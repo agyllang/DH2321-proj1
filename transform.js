@@ -1,6 +1,10 @@
 // TODO
 // change the border colour (bubbles) -a
 // fix the value that appears on the label -s
+// host visualization online - Github pages -a
+// add the number of the skill on the bubble -a
+// change the border colour (bubbles) -a
+
 
 // skill value cutoff
 let cutoff = 5;
@@ -64,7 +68,7 @@ const loadData = () => {
     name: "main",
     children: [
       {
-        name: "STEM",
+        name: "STEM Skills",
         children: [
           {
             name: "Computer Skills",
@@ -88,16 +92,16 @@ const loadData = () => {
           },
         ],
       },
-      categories["UX Evaluation"],
+      categories["UX Evaluation Skills"],
       {
-        name: "Visual",
+        name: "Visual Skills",
         children: [
           categories["Information Visualization"],
           categories["Art and Drawing"],
         ],
       },
       {
-        name: "Teamwork",
+        name: "Teamwork Skills",
         children: [categories["Communication"], categories["Collaboration"]],
       },
     ],

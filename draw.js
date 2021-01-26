@@ -1,6 +1,7 @@
 "use strict";
 
-// Code based on: https://observablehq.com/@d3/zoomable-circle-packing
+// Code based on: https://observaehq.com/@d3/zoomable-circle-packing
+
 const chartHolder = document.getElementById("chart-holder");
 
 const width = 932;
@@ -26,7 +27,6 @@ const chart = () => {
     .select("#chart")
     .attr("viewBox", `-${width / 2} -${height / 2} ${width} ${height}`)
     .style("display", "block")
-    .style("margin", "0 -14px")
     .style("background", colors.background)
     .style("cursor", "pointer")
     .on("click", (event) => zoom(event, root));
@@ -41,7 +41,7 @@ const chart = () => {
     .attr("stroke-width", d => !d.children && d.data.data &&  d.data.data.relevantCoursesBoolean ? "1" : "0")
     .attr("pointer-events", (d) => (!d.children ? "none" : null))
     .on("mouseover", function () {
-      d3.select(this).attr("stroke", "#000").attr("stroke-width", "1");
+      d3.select(this).attr("stroke", "#000").attr("stroke-width", "2");
     })
     .on("mouseout", function () {
       d3.select(this).attr("stroke", null);
@@ -80,6 +80,7 @@ const chart = () => {
     .style("display", (d) => (d.parent === root ? "inline" : "none"))
     .text((d) => d.data.value);
 
+ 
   zoomTo([root.x, root.y, root.r]);
 
   function zoomTo(v) {
@@ -91,10 +92,12 @@ const chart = () => {
       "transform",
       (d) => `translate(${(d.x - v[0]) * k},${(d.y - v[1]) * k})`
     );
+
     skillLabel.attr(
       "transform",
       (d) => `translate(${(d.x - v[0]) * k},${(d.y - v[1] + 5) * k})`
     );
+
     node.attr(
       "transform",
       (d) => `translate(${(d.x - v[0]) * k},${(d.y - v[1]) * k})`
@@ -128,6 +131,7 @@ const chart = () => {
         if (d.parent !== focus) this.style.display = "none";
       });
 
+
   skillLabel
       .filter(function (d) {
         return d.parent === focus || this.style.display === "inline";
@@ -142,6 +146,7 @@ const chart = () => {
       .on("end", function (d) {
         if (d.parent !== focus) this.style.display = "none";
       });
+
   }
 
   // evil hack for zoom bug

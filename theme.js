@@ -1,24 +1,24 @@
 const colors = {
-  background: "#FFFFEA",
-  text: "black",
-  STEM: "#B7E4C7",
-  "Computer Skills": "#95D5B2",
-  Programming: "#52B788",
-  "General Programming": "#40916C",
-  "CG Programming": "#40916C",
-  "HCI Programming": "#40916C",
-  "Version Control": "#52B788",
-  "Computer Usage": "#52B788",
-  Mathematics: "#95D5B2",
-  Math: "#52B788",
-  Statistics: "#52B788",
-  Visual: "#DEC9E9",
-  "Information Visualization": "#D2B7E5",
-  "Art and Drawing": "#D2B7E5",
-  "UX Evaluation": "#FEC3A6",
-  Teamwork: "#A9D6E5",
-  Communication: "#89C2D9",
-  Collaboration: "#89C2D9",
+  background: "#FFEBCB",
+  text: "313131",
+  "STEM Skills": "rgba(33, 131, 128, 0.2)",
+  "Computer Skills": "rgba(33, 131, 128, 0.3)",
+  Programming: "rgba(33, 131, 128, 0.4)",
+  "General Programming": "rgba(33, 131, 128, 0.5)",
+  "CG Programming": "rgba(33, 131, 128, 0.5)",
+  "HCI Programming": "rgba(33, 131, 128, 0.5)",
+  "Version Control": "rgba(33, 131, 128, 0.4)",
+  "Computer Usage": "rgba(33, 131, 128, 0.4)",
+  Mathematics: "rgba(33, 131, 128, 0.3)",
+  Math: "rgba(33, 131, 128, 0.5)",
+  Statistics: "rgba(33, 131, 128, 0.5)",
+  "Visual Skills": "rgba(130, 70, 112, 0.3)",
+  "Information Visualization": "rgba(130, 70, 112, 0.4)",
+  "Art and Drawing": "rgba(130, 70, 112, 0.4)",
+  "UX Evaluation": "rgba(70, 117, 153, 0.6)",
+  "Teamwork Skills": "rgba(215, 122, 97, 0.3)",
+  Communication: "rgba(215, 122, 97, 0.4)",
+  Collaboration: "rgba(215, 122, 97, 0.4)",
 
   person: {
     other: "#f7b538",
@@ -31,10 +31,10 @@ const colors = {
 const fonts = {
   label: {
     size: "30px",
-    weight: "900"
+    weight: "400"
   },
   name: {
     size: "20px",
-    weight: "500"
+    weight: "400"
   }
 }
