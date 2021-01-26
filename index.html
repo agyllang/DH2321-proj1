@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Group Formation</title>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body style="box-sizing: border-box; overflow: auto; position: relative;">
+  <div style="position: absolute; top: 1rem; left: 1rem; display: grid; grid-template-columns: 2fr 4fr 1fr; column-gap: 0.1rem;">
+    <label style="place-self: center; font-weight: 500;">Skill Rating Filter</label>
+    <input style="place-self: center;" type="range" min="1" max="10" id="cutoff-input" />
+    <label style="place-self: center; font-weight: 500;" id="cutoff-value">5</label>
+  </div>
+  <svg id="chart" style="width: 100vw; height: 100vh"></svg>
+
+  <div class="legend">
+    <div class="legend__one">
+        <div class="legend__one-item">
+          <div class="item1-text">Computer Science</div>
+          <img class="item-color" src="Ellipse 18.png">
+        </div>
+        <div class="legend__one-item">
+          <div class="item2-text">Media Technology</div>
+          <div class="test">
+          <img class="item-color" src="Ellipse 19.png">
+        </div>
+        </div>
+        <div class="legend__one-item">
+          <div class="item3-text">Other Major</div>
+          <img class="item-color" src="Ellipse 17.png">
+        </div>
+      </div>
+      <div class="legend__two">
+        <div class="legend__two-item">
+          <div class="item4-text">Not Taken Visualization Course</div>
+          <img class="item-color" src="Ellipse 19.png">
+        </div>
+        <div class="legend__two-item">
+          <div class="item5-text">Taken Visualization Course</div>
+          <img class="item-color" src="Ellipse 20.png">
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <script src="./theme.js"></script>
+  <script src="./people.js"></script>
+  <script src="./transform.js"></script>
+  <script src="./draw.js"></script>
+</body>
+
+</html>
