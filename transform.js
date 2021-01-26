@@ -1,9 +1,6 @@
 // TODO
-// add legend - f
-// host visualization online - Github pages -a
-// add the number of the skill on the bubble -a
 // change the border colour (bubbles) -a
-// update theme -f
+// fix the value that appears on the label -s
 
 // skill value cutoff
 let cutoff = 5;

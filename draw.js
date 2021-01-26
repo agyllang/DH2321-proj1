@@ -65,6 +65,21 @@ const chart = () => {
     .style("display", (d) => (d.parent === root ? "inline" : "none"))
     .text((d) => d.data.name);
 
+  const skillLabel = svg
+    .append("g")
+    .style("font-size", fonts.label.size)
+    .style("font-weight", fonts.label.weight)
+    .style("font-color", colors.text)
+    .attr("pointer-events", "none")
+    .attr("text-anchor", "middle")
+    .selectAll("text")
+    .data(root.descendants())
+    .join("text")
+    .attr("class", "break")
+    .style("fill-opacity", (d) => (d.parent === root ? 1 : 0))
+    .style("display", (d) => (d.parent === root ? "inline" : "none"))
+    .text((d) => d.data.value);
+
   zoomTo([root.x, root.y, root.r]);
 
   function zoomTo(v) {
@@ -75,6 +90,10 @@ const chart = () => {
     label.attr(
       "transform",
       (d) => `translate(${(d.x - v[0]) * k},${(d.y - v[1]) * k})`
+    );
+    skillLabel.attr(
+      "transform",
+      (d) => `translate(${(d.x - v[0]) * k},${(d.y - v[1] + 5) * k})`
     );
     node.attr(
       "transform",
@@ -95,6 +114,21 @@ const chart = () => {
       });
 
     label
+      .filter(function (d) {
+        return d.parent === focus || this.style.display === "inline";
+      })
+      .transition(transition)
+      .style("fill-opacity", (d) => (d.parent === focus ? 1 : 0))
+      .style("font-size", (d) => (d.children ? fonts.label.size : fonts.name.size))
+      .style("font-weight", (d) => (d.children ? fonts.label.weight : fonts.name.weight))
+      .on("start", function (d) {
+        if (d.parent === focus) this.style.display = "inline";
+      })
+      .on("end", function (d) {
+        if (d.parent !== focus) this.style.display = "none";
+      });
+
+  skillLabel
       .filter(function (d) {
         return d.parent === focus || this.style.display === "inline";
       })
