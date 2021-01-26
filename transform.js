@@ -27,6 +27,7 @@ const translation = {
 
 const makePerson = (person, value, cutoff) => ({
   name: person.alias,
+  skill: value,
   value: (value - cutoff + 1) * 3,
   color: colors.person[person.major] || colors.person.other,
   data: { ...person },
