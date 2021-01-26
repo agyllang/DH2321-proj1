@@ -55,7 +55,8 @@ const chart = () => {
     .append("g")
     .style("font-size", fonts.label.size)
     .style("font-weight", fonts.label.weight)
-    .style("font-color", colors.text)
+    .style("fill", colors.text)
+    .style("text-shadow", fonts.label['text-shadow'])
     .attr("pointer-events", "none")
     .attr("text-anchor", "middle")
     .selectAll("text")
@@ -69,7 +70,8 @@ const chart = () => {
     .append("g")
     .style("font-size", fonts.label.size)
     .style("font-weight", fonts.label.weight)
-    .style("font-color", colors.text)
+    .style("fill", colors.text)
+    .style("text-shadow", fonts.label['text-shadow'])
     .attr("pointer-events", "none")
     .attr("text-anchor", "middle")
     .selectAll("text")
@@ -95,7 +97,7 @@ const chart = () => {
 
     skillLabel.attr(
       "transform",
-      (d) => `translate(${(d.x - v[0]) * k},${(d.y - v[1] + 7) * k})`
+      (d) => `translate(${(d.x - v[0]) * k},${(d.y - v[1] + 3 * (d.r / 8)) * k})`
     );
 
     node.attr(

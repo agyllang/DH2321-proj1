@@ -1,6 +1,6 @@
 const colors = {
   background: "#FFEBCB",
-  text: "313131",
+  text: "white",
   "STEM Skills": "rgba(33, 131, 128, 0.2)",
   "Computer Skills": "rgba(33, 131, 128, 0.3)",
   Programming: "rgba(33, 131, 128, 0.4)",
@@ -30,11 +30,12 @@ const colors = {
 
 const fonts = {
   label: {
-    size: "30px",
-    weight: "700"
+    size: "25px",
+    weight: "700",
+    "text-shadow": "1px 0 0 #000",
   },
   name: {
-    size: "20px",
+    size: "15px",
     weight: "400"
   }
 }

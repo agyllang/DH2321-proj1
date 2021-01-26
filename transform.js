@@ -1,12 +1,11 @@
 // TODO
 // take nice screenshots for the document
 // label disappears at high levels (vis)
-// maybe change positioning?
-// fix skill numbers (too shitty-looking)
-// change label (unreadable)
 
 // skill value cutoff
 let cutoff = 5;
+
+const baseValue = 3;
 
 // person skills to category
 const translation = {
@@ -43,6 +42,7 @@ const loadData = () => {
     (acc, name) => ({
       ...acc,
       [name]: {
+        value: baseValue,
         name,
         children: [],
       },
@@ -59,23 +59,22 @@ const loadData = () => {
     });
   });
 
-  categories = Object.entries(categories)
-    .filter(([_, v]) => v.children.length > 0)
-    .reduce((acc, [k,v]) => ({ ...acc, [k]: v }), {});
-
   // bubble hierarchy
   const basicChart = {
     name: "main",
     children: [
       {
         name: "STEM Skills",
+        value: baseValue,
         children: [
           {
             name: "Computer Skills",
+            value: baseValue,
             color: colors["Computer Skills"],
             children: [
               {
                 name: "Programming",
+                value: baseValue,
                 children: [
                   categories["General Programming"],
                   categories["CG Programming"],
@@ -88,6 +87,7 @@ const loadData = () => {
           },
           {
             name: "Mathematics",
+            value: baseValue,
             children: [categories["Math"], categories["Statistics"]],
           },
         ],
@@ -95,6 +95,7 @@ const loadData = () => {
       categories["UX Evaluation Skills"],
       {
         name: "Visual Skills",
+        value: baseValue,
         children: [
           categories["Information Visualization"],
           categories["Art and Drawing"],
@@ -102,6 +103,7 @@ const loadData = () => {
       },
       {
         name: "Teamwork Skills",
+        value: baseValue,
         children: [categories["Communication"], categories["Collaboration"]],
       },
     ],
